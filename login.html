@@ -143,7 +143,7 @@
         document.body.appendChild(p);
     }
 
-    const API = localStorage.getItem('flames_api') || 'flamesapp.up.railway.app';
+    const API = localStorage.getItem('flames_api') || 'https://flamesapp.up.railway.app';
 
     document.getElementById('password').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
     document.getElementById('username').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });

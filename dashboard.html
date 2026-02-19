@@ -365,7 +365,7 @@
     </div>
     <div class="panel-section" style="font-size:13px;">
         <h3>API Server</h3>
-        <input id="api-url-input" style="width:100%;background:#12060566;border:1px solid #4a1a0a;border-radius:6px;padding:7px 10px;color:var(--text);font-family:'Rajdhani',sans-serif;font-size:13px;outline:none;" placeholder="flamesapp.up.railway.app">
+        <input id="api-url-input" style="width:100%;background:#12060566;border:1px solid #4a1a0a;border-radius:6px;padding:7px 10px;color:var(--text);font-family:'Rajdhani',sans-serif;font-size:13px;outline:none;" placeholder="https://flamesapp.up.railway.app">
         <button onclick="saveApiUrl()" style="margin-top:8px;width:100%;background:#8b1a0066;border:1px solid #4a1a0a;color:var(--text);padding:7px;border-radius:6px;cursor:pointer;font-family:'Rajdhani',sans-serif;font-size:13px;">Save</button>
     </div>
     <button class="logout-btn" id="logout-trigger">
@@ -515,7 +515,7 @@ const authHeader = () => ({ 'Authorization': `Bearer ${TOKEN()}` });
 // ====================== AUTH CHECK ======================
 if (!TOKEN()) window.location.href = 'login.html';
 
-document.getElementById('api-url-input').value = localStorage.getItem('flames_api') || 'flamesapp.up.railway.app';
+document.getElementById('api-url-input').value = localStorage.getItem('flames_api') || 'https://flamesapp.up.railway.app';
 
 // Fetch /me
 (async () => {
