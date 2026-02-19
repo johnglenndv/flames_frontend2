@@ -508,7 +508,7 @@
 
 <script>
 // ====================== CONFIG ======================
-const API_BASE = () => localStorage.getItem('flames_api') || 'flamesapp.up.railway.app';
+const API_BASE = () => localStorage.getItem('flames_api') || 'https://flamesapp.up.railway.app';
 const TOKEN    = () => localStorage.getItem('flames_token');
 const authHeader = () => ({ 'Authorization': `Bearer ${TOKEN()}` });
 
